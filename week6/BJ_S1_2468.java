@@ -8,6 +8,7 @@ import java.util.Queue;
 /** 2468, 안전영역
  * 메모리: 36468 kb
  * 속도: 260 ms
+ *
  * 69%에서 틀렸습니다.
  * -> 이유: "아무 지역도 물에 잠기지 않을 수도 있다." 즉, 비의 양이 0인 경우도 생각해야 했다.
  */
@@ -46,10 +47,6 @@ public class BJ_S1_2468 {
 			}
 
 			result = Math.max(result, count);
-		}
-
-		if(result == Integer.MIN_VALUE) {
-			result = 0;
 		}
 	}
 
