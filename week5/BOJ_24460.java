@@ -5,6 +5,9 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Arrays;
 
+/**
+ * 24406. 특별상이라도 받고 싶어
+ */
 public class BOJ_24460 {
 
 	static BufferedReader br = new BufferedReader(new InputStreamReader((System.in)));
