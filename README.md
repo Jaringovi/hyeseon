@@ -10,7 +10,8 @@
 | `2주차` | BFS와 DFS     | [week2](./week2/week2.md) |
 | `3주차` | BFS와 DFS, 구현 | [week3](./week3/week3.md) |
 | `4주차` | 재귀           | [week4](./week4/week4.md) |
-| `5주차` | 재귀, dp       | [week4](./week5/week5.md) |
-| `6주차` | 구현, 그래프, 재귀  | [week4](./week6/week6.md) |
+| `5주차` | 재귀, dp       | [week5](./week5/week5.md) |
+| `6주차` | 구현, 그래프, 재귀  | [week6](./week6/week6.md) |
+| `7주차` | 백트래킹         | [week7](./week7/week7.md) |
 
 
