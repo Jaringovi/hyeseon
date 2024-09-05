@@ -2,6 +2,12 @@ package week8;
 
 import java.io.*;
 
+/** 14500. 테트로미노
+ * 메모리
+ * 시간
+ *
+ * 구현, dfs, 완탐
+ */
 public class BJ_G4_14500 {
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
