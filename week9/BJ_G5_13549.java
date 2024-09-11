@@ -16,7 +16,6 @@ public class BJ_G5_13549 {
 	static int N;
 	static int K;
 	static int[] dist;
-	static List<List<Node>> graph;
 	static int[][] move = {{1, 1}, {-1, 1}, {2, 0}};
 
 	static int result;
@@ -71,11 +70,6 @@ public class BJ_G5_13549 {
 		K = Integer.parseInt(inputs[1]);
 
 		dist = new int[100_001];
-		graph = new ArrayList<>();
-		for (int i = 0; i <= K; i++) {
-			graph.add(new ArrayList<>());
-		}
-
 		Arrays.fill(dist, Integer.MAX_VALUE);
 
 		result = 0;
