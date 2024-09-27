@@ -10,9 +10,9 @@ import java.util.*;
  * 그리디, 우선순위
  * pay로 내림차순 정렬, pay 같으면 day로 내림차순 정렬
  * day 방문 배열 생성
- * 해당 pair가 지금부터 앞선 날짜까지 강의일이 비어있으면 누적 및 방문처리 
+ * 해당 pair가 지금부터 앞선 날짜까지 강의일이 비어있으면 누적 및 방문처리
  */
-public class BJ_G3_2109 {
+public class BJ_G3_2109_순회강연_21132kb_260ms {
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static int N;
