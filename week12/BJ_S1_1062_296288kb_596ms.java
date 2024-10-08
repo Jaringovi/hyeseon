@@ -1,18 +1,27 @@
 package week12;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
-public class BJ_S1_1062 {
+/** 1062. 가르침
+ * 메모리 296288 kb
+ * 시간 596 ms
+ *
+ * 백트래킹
+ * 조합
+ * 알파벳 배열
+ *
+ * [틀린 이유]
+ * 입력 단어에서 acint 를 제외한 글자만 검사를 했는데 그럴 경우 antantica 같은 acint가 여러 번 있는 단어가
+ * 없는 것처럼 취급되었음
+ * 입력 단어를 그대로 검사하여 해결했습니다.
+ */
+public class BJ_S1_1062_296288kb_596ms {
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static int n;
     static int k;
     static boolean[] alphabet;
-    static List<Character> letters;
     static List<String> words;
 
     static int result;
@@ -31,6 +40,9 @@ public class BJ_S1_1062 {
         if(k < 5) {
             result = 0;
             return;
+        } else if (k == 26) {
+            result = n;
+            return;
         }
 
         backtracking(0, 0);
@@ -43,10 +55,12 @@ public class BJ_S1_1062 {
             return;
         }
 
-        for (int i = start; i < letters.size(); i++) {
-            alphabet[letters.get(i) - 'a'] = true;
-            backtracking(cnt + 1, i + 1);
-            alphabet[letters.get(i) - 'a'] = false;
+        for (int i = start; i < 26; i++) {
+            if (!alphabet[i]) {
+                alphabet[i] = true;
+                backtracking(cnt + 1, i);
+                alphabet[i] = false;
+            }
         }
     }
 
@@ -73,30 +87,18 @@ public class BJ_S1_1062 {
         k = Integer.parseInt(inputs[1]);
 
         alphabet = new boolean[26];
-        alphabet[0] = true; // a
-        alphabet[2] = true; // c
-        alphabet[8] = true; // i
-        alphabet[13] = true; // n
-        alphabet[19] = true; // t
+        alphabet['a' - 'a'] = true; // a
+        alphabet['c' - 'a'] = true; // c
+        alphabet['i' - 'a'] = true; // i
+        alphabet['n' - 'a'] = true; // n
+        alphabet['t' - 'a'] = true; // t
 
         words = new ArrayList<>();
-        letters = new ArrayList<>();
 
         for (int i = 0; i < n; i++) {
             String word = br.readLine().replace("anta", "").replace("tica", "");
-
-            String nextWord = "";
-            for(char c : word.toCharArray()) {
-                if(alphabet[c - 'a'] || letters.contains(c)) {
-                    continue;
-                }
-                letters.add(c);
-                nextWord += String.valueOf(c);
-            }
-
-            words.add(nextWord);
+            words.add(word);
         }
-
         result = Integer.MIN_VALUE;
     }
 }
