@@ -2,7 +2,9 @@ package week12;
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class BJ_S1_1062 {
 
@@ -42,13 +44,9 @@ public class BJ_S1_1062 {
         }
 
         for (int i = start; i < letters.size(); i++) {
-            // 해당 글자를 배운다.
             alphabet[letters.get(i) - 'a'] = true;
             backtracking(cnt + 1, i + 1);
-
             alphabet[letters.get(i) - 'a'] = false;
-            // 해당 글자를 배우지 않는다.
-            backtracking(cnt, i + 1);
         }
     }
 
@@ -89,10 +87,9 @@ public class BJ_S1_1062 {
 
             String nextWord = "";
             for(char c : word.toCharArray()) {
-                if(alphabet[c - 'a']) {
+                if(alphabet[c - 'a'] || letters.contains(c)) {
                     continue;
                 }
-
                 letters.add(c);
                 nextWord += String.valueOf(c);
             }
