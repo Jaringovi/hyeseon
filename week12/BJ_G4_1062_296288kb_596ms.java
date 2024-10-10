@@ -16,7 +16,7 @@ import java.util.*;
  * 없는 것처럼 취급되었음
  * 입력 단어를 그대로 검사하여 해결했습니다.
  */
-public class BJ_S1_1062_296288kb_596ms {
+public class BJ_G4_1062_296288kb_596ms {
 
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static int n;
