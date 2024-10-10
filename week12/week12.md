@@ -2,7 +2,7 @@
 
 | 문제                                                       | 풀이코드                    |
 |:---------------------------------------------------------|:------------------------|
-| [1062. 가르침 ](https://www.acmicpc.net/problem/2109) | [풀이](./BJ_G4_1062_296288kb_596ms.java)  |
-| [1149. RGB거리 ](https://www.acmicpc.net/problem/2109) | [풀이](./BJ_S1_1149_14736kb_112ms.java)  |
-| [10844. 쉬운 계단 수 ](https://www.acmicpc.net/problem/2109) | [풀이](./BJ_S1_10844_14300kb_104ms.java)  |
+| [1062. 가르침 ](https://www.acmicpc.net/problem/1062) | [풀이](./BJ_G4_1062_296288kb_596ms.java)  |
+| [1149. RGB거리 ](https://www.acmicpc.net/problem/1149) | [풀이](./BJ_S1_1149_14736kb_112ms.java)  |
+| [10844. 쉬운 계단 수 ](https://www.acmicpc.net/problem/10844) | [풀이](./BJ_S1_10844_14300kb_104ms.java)  |
 
