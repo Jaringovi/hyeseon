@@ -19,5 +19,6 @@
 | `11주차` | 그리디                     | [week11](./week11/week11.md) |
 | `12주차` | dp, 백트래킹                | [week12](./week12/week12.md) |
 | `13주차` | dp, 시뮬레이션, 재귀           | [week13](./week13/week13.md) |
+| `14주차` | dp, 완전탐색, 구현       | [week14](./week14/week14.md) |
 
 
