@@ -4,11 +4,14 @@ import java.io.*;
 import java.util.*;
 
 /** 14621. 나만 안되는 연애
- * 메모리
- * 시간
+ * 메모리 21760 kb
+ * 시간 232 ms
  * MST
  *
- * 33%에서 틀린 코드
+ * union 하기 전에 start, end 노드가 다른 성별 학교인지 검사한 후 union 한다.
+ *
+ * 33%에서 틀렸습니다 난 이유
+ * count가 N-1이 되기 전에 간선 리스트를 다 돌 수 있으므로 flag 변수 필요
  */
 public class BJ_G3_14621 {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -17,6 +20,7 @@ public class BJ_G3_14621 {
     static int[] parents;
     static String[] universities;
     static List<Edge> edges;
+    static boolean flag;
     static int result;
 
     static class Edge implements Comparable<Edge> {
@@ -76,6 +80,7 @@ public class BJ_G3_14621 {
             if (!universities[e.start].equals(universities[e.end]) && union(e.start, e.end)) {
                 result += e.weight;
                 if (++count == N - 1) {
+                    flag = true;
                     break;
                 }
             }
@@ -110,7 +115,7 @@ public class BJ_G3_14621 {
     }
 
     private static void output() {
-        if(result == 0) {
+        if(result == 0 || !flag) {
             System.out.println(-1);
         }else {
             System.out.println(result);
