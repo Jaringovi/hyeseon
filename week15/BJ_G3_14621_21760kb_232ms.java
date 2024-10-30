@@ -13,7 +13,7 @@ import java.util.*;
  * 33%에서 틀렸습니다 난 이유
  * count가 N-1이 되기 전에 간선 리스트를 다 돌 수 있으므로 flag 변수 필요
  */
-public class BJ_G3_14621 {
+public class BJ_G3_14621_21760kb_232ms {
     static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     static int N;
     static int E;
