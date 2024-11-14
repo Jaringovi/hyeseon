@@ -22,5 +22,6 @@
 | `14주차` | dp, 완전탐색, 구현            | [week14](./week14/week14.md) |
 | `15주차` | MST, 완전탐색               | [week15](./week15/week15.md) |
 | `16주차` | 시뮬레이션, 완전탐색, 이분탐색       | [week16](./week16/week16.md) |
+| `17주차` | 구현, bfs                 | [week17](./week17/week17.md) |
 
 
