@@ -12,7 +12,7 @@
 | `4주차`  | 재귀                      | [week04](./week04/week4.md)  |
 | `5주차`  | 재귀, dp                  | [week05](./week05/week5.md)  |
 | `6주차`  | 구현, 그래프, 재귀             | [week06](./week06/week6.md)  |
-| `7주차`  | 백트래킹, 구현                | [week07](./week07/week7.md)  |
+| `7주차`  | 백트래킹, 구현, 이분탐색          | [week07](./week07/week7.md)  |
 | `8주차`  | 구현, MST, 위상정렬           | [week08](./week08/week8.md)  |
 | `9주차`  | 백트래킹, 이분탐색, 다익스트라       | [week09](./week09/week9.md)  |
 | `10주차` | 시뮬레이션, 이분탐색, 그리디, 비트마스킹 | [week10](./week10/week10.md) |
